@@ -1,0 +1,29 @@
+{
+  "skill_name": "roblox-build",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "i've got a greybox tavern in roblox studio (just walls and a roof right now, all default grey). can you make it actually look like a cozy medieval tavern? it's connected to the studio mcp so you can just build in it",
+      "expected_output": "Inspects the place first, establishes a palette/material/scale plan, then builds in passes under a tagged folder: recessed door/window openings, trim, roof with overhang, interior beams, counter, clustered props, then a warm interior lighting preset with local lights. Verifies with screen_capture and reports part count and any visual issues; does not delete existing geometry.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "my roblox map looks so flat and washed out, like everything is the same brightness. it's an outdoor town map with about 8k parts. how do i fix it",
+      "expected_output": "Diagnoses lighting over modelling: current Lighting mode (Soft/ShadowMap), Ambient/OutdoorAmbient too high, no Atmosphere depth, missing value hierarchy. Applies concrete settings (Realistic/Future if available, brightness, atmosphere density/offset, one or two post effects, a few shadowed local lights), then composition fixes (value hierarchy, focal point, density contrast), with a note about mobile cost.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "build a small cyberpunk alley scene in roblox studio for a showcase — rain, neon signs, noodles stand, dumpsters, the works. should look good from the street level camera",
+      "expected_output": "Night neon lighting preset, a 16-stud modular alley with recessed shopfronts, emissive signage, wet ground material and puddles, clustered story props, foreground/midground/background layering, and a hero camera captured at street level. Uses tagged folder, prints bounds/part count, verifies visually, and keeps part count reasonable.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "can you build a medieval village in my roblox place? like 6-8 houses, a well, some fences, a road. no scripting needed just the build",
+      "expected_output": "Plans a style bible and modular kit, builds houses from cloned kit pieces on a 16-stud grid with varied heights/rotations, a road, fences, a well, and set dressing; keeps parts in budget (not tiled flats), applies exterior lighting with atmosphere, verifies with captures from player height, and leaves the build in a clearly named folder without touching existing content.",
+      "files": []
+    }
+  ]
+}
