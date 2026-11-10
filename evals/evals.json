@@ -1,0 +1,29 @@
+{
+  "skill_name": "roblox-game-dev",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "i want to make a roblox game where players compete to collect the most coins in 3 minute rounds, with a shop between rounds. i have roblox studio and rojo set up. can you build the core of it",
+      "expected_output": "Server-authoritative round loop with intermission/playing/results phases, coin collection validated server-side, replicated round state with late-join sync, session-locked DataStore persistence, a validated shop RemoteFunction with affordability checks and rate limiting, client HUD in Scale units, and a note on what was and wasn't playtested.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "my roblox game has a bug where players can get infinite coins. i think it's the shop remote but not sure. here's my script: [script]",
+      "expected_output": "Identifies the client-authoritative path (granting from client input, missing validation/cooldown, unverified price or item id), explains the exploit precisely, and patches it server-side with shape/ownership/rate/affordability checks plus idempotent handling. Notes how to verify with a garbage remote call.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "how do i save player data in roblox without wiping everyone's progress when i add new fields later? also i've heard datastores lose data, is that real",
+      "expected_output": "Explains pcall+backoff, session locking, debounced saving, schema versioning with a migration function, and the real failure modes (concurrent servers, shutdown without BindToClose, transient errors) plus the recommendation to use ProfileStore in production. Provides working code, not just concepts.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "add a dev product that gives 500 coins and a game pass that gives 2x coins forever to my roblox game. make sure people can't scam it",
+      "expected_output": "Server-side ProcessReceipt with idempotent receipt tracking and NotProcessedYet retry semantics, pass check cached per session, price read from GetProductInfo, granting only on the server, and a closure test for double-grant. Mentions policy/pricing sanity rather than blindly adding loot-box mechanics.",
+      "files": []
+    }
+  ]
+}
