@@ -1,0 +1,29 @@
+{
+  "skill_name": "webgame",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "make me a little browser game where you're a frog hopping across lily pads and if you miss you fall in the water. my friends should be able to play it on their phones. single html file pls",
+      "expected_output": "A working single-file HTML game with a frog, lily pads, water-failure state, one-key/tap retry, touch controls sized for phones, no console errors, and at least the basic feel layer (jump coyote time or buffering, landing feedback, score, restart).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "our startup landing page needs something playable in the hero section, like a tiny arcade thing people can mess with while they read. keep it fast, no build step, brand colors are #0f172a and a lime accent",
+      "expected_output": "A self-contained embeddable game (about one screen, no build step) that starts instantly, has a clear one-line premise, works with mouse/keyboard/touch, uses the given palette, and does not trap page scroll or break the surrounding layout.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "i made this canvas snake clone yesterday and it technically works but it just feels dead, like pressing keys does nothing. the snake also teleports when it wraps. can you make it actually feel good",
+      "expected_output": "Diagnosis tied to game feel (input latency, no interpolation, missing feedback on eating/death, wrap without visual cue), then concrete fixes: easing/turn animation, eat burst + pop + sound, hitstop or shake on death, smooth wrap, combo/score feedback; verified in a browser or clearly reported as not playable-checked.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "for a game jam this weekend i want to build a survivors-like: you move, you auto-shoot, waves keep coming, you pick an upgrade every level. 5 minute runs. make it feel juicy",
+      "expected_output": "A playable survivors-style game with movement + auto-attack, escalating waves, XP and level-up choice of 3 upgrades, a 5-minute run arc, heavy juice (hitstop, shake, particle deaths, floating damage), touch support, and a results/retry screen.",
+      "files": []
+    }
+  ]
+}
